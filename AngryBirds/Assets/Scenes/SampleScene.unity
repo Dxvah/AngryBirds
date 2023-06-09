@@ -5586,7 +5586,6 @@ GameObject:
   - component: {fileID: 1216603789}
   - component: {fileID: 1216603791}
   - component: {fileID: 1216603793}
-  - component: {fileID: 1216603792}
   m_Layer: 0
   m_Name: Final del Mapa
   m_TagString: Untagged
@@ -5687,21 +5686,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &1216603792
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1216603788}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b4df0650fe947b24f98f67b2c9c27c71, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rbFinal: {fileID: 1216603793}
-  puntaje: {fileID: 2111992413}
-  cantidadPuntos: 1
 --- !u!50 &1216603793
 Rigidbody2D:
   serializedVersion: 4
@@ -5710,7 +5694,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1216603788}
-  m_BodyType: 0
+  m_BodyType: 2
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -5722,7 +5706,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 7
+  m_Constraints: 0
 --- !u!1 &1221529863
 GameObject:
   m_ObjectHideFlags: 0
