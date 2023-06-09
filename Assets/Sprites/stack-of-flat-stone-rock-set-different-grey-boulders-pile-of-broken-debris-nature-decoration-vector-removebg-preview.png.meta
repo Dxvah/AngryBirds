@@ -1,0 +1,421 @@
+fileFormatVersion: 2
+guid: cea6ab5d428965f40b3819698bff9a99
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: stack-of-flat-stone-rock-set-different-grey-boulders-pile-of-broken-debris-nature-decoration-vector-removebg-preview_0
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 411
+        width: 73
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71b9ee13f61dd15479d4909a3ed35c45
+      internalID: -1877215900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stack-of-flat-stone-rock-set-different-grey-boulders-pile-of-broken-debris-nature-decoration-vector-removebg-preview_1
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 419
+        width: 47
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8cb7ec552e8e5f40b755bb5e6d7b611
+      internalID: 1242324469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stack-of-flat-stone-rock-set-different-grey-boulders-pile-of-broken-debris-nature-decoration-vector-removebg-preview_2
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 412
+        width: 52
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: efb0cf74d933383449db4ccd26067900
+      internalID: 1004352205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stack-of-flat-stone-rock-set-different-grey-boulders-pile-of-broken-debris-nature-decoration-vector-removebg-preview_3
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 408
+        width: 62
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64a3f134b69c0a546b1779417fdbae4e
+      internalID: 1369039068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stack-of-flat-stone-rock-set-different-grey-boulders-pile-of-broken-debris-nature-decoration-vector-removebg-preview_4
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 401
+        width: 118
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39154ad46bfbc1047bef50b544ddb074
+      internalID: 36228982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stack-of-flat-stone-rock-set-different-grey-boulders-pile-of-broken-debris-nature-decoration-vector-removebg-preview_5
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 322
+        width: 94
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 366d5726fc288ea4fb41a3dba3b55209
+      internalID: 723147921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stack-of-flat-stone-rock-set-different-grey-boulders-pile-of-broken-debris-nature-decoration-vector-removebg-preview_6
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 322
+        width: 98
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7d643bb61d55a84a897afe12abab540
+      internalID: 319672023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stack-of-flat-stone-rock-set-different-grey-boulders-pile-of-broken-debris-nature-decoration-vector-removebg-preview_7
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 325
+        width: 71
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e0f6e7b1e4c6a144a5a7c6ca0512483
+      internalID: 1112515210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stack-of-flat-stone-rock-set-different-grey-boulders-pile-of-broken-debris-nature-decoration-vector-removebg-preview_8
+      rect:
+        serializedVersion: 2
+        x: 346
+        y: 323
+        width: 119
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6ab09b7e5ee1374b84911b32ccf6ebb
+      internalID: 1916372543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stack-of-flat-stone-rock-set-different-grey-boulders-pile-of-broken-debris-nature-decoration-vector-removebg-preview_9
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 225
+        width: 124
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca0057465d1d55b4db0762f2d3aa09d4
+      internalID: 1278293109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stack-of-flat-stone-rock-set-different-grey-boulders-pile-of-broken-debris-nature-decoration-vector-removebg-preview_10
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 230
+        width: 127
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79bc588407051374cab30ecef484c583
+      internalID: -1165503784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stack-of-flat-stone-rock-set-different-grey-boulders-pile-of-broken-debris-nature-decoration-vector-removebg-preview_11
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 234
+        width: 145
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 896987555e01e4b4cbd6683561cd45fb
+      internalID: -1060570537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stack-of-flat-stone-rock-set-different-grey-boulders-pile-of-broken-debris-nature-decoration-vector-removebg-preview_12
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 26
+        width: 394
+        height: 159
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c6e1870e82af2d44bedfe18cba29720
+      internalID: 396073958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      stack-of-flat-stone-rock-set-different-grey-boulders-pile-of-broken-debris-nature-decoration-vector-removebg-preview_9: 1278293109
+      stack-of-flat-stone-rock-set-different-grey-boulders-pile-of-broken-debris-nature-decoration-vector-removebg-preview_3: 1369039068
+      stack-of-flat-stone-rock-set-different-grey-boulders-pile-of-broken-debris-nature-decoration-vector-removebg-preview_2: 1004352205
+      stack-of-flat-stone-rock-set-different-grey-boulders-pile-of-broken-debris-nature-decoration-vector-removebg-preview_11: -1060570537
+      stack-of-flat-stone-rock-set-different-grey-boulders-pile-of-broken-debris-nature-decoration-vector-removebg-preview_4: 36228982
+      stack-of-flat-stone-rock-set-different-grey-boulders-pile-of-broken-debris-nature-decoration-vector-removebg-preview_5: 723147921
+      stack-of-flat-stone-rock-set-different-grey-boulders-pile-of-broken-debris-nature-decoration-vector-removebg-preview_7: 1112515210
+      stack-of-flat-stone-rock-set-different-grey-boulders-pile-of-broken-debris-nature-decoration-vector-removebg-preview_6: 319672023
+      stack-of-flat-stone-rock-set-different-grey-boulders-pile-of-broken-debris-nature-decoration-vector-removebg-preview_12: 396073958
+      stack-of-flat-stone-rock-set-different-grey-boulders-pile-of-broken-debris-nature-decoration-vector-removebg-preview_10: -1165503784
+      stack-of-flat-stone-rock-set-different-grey-boulders-pile-of-broken-debris-nature-decoration-vector-removebg-preview_8: 1916372543
+      stack-of-flat-stone-rock-set-different-grey-boulders-pile-of-broken-debris-nature-decoration-vector-removebg-preview_1: 1242324469
+      stack-of-flat-stone-rock-set-different-grey-boulders-pile-of-broken-debris-nature-decoration-vector-removebg-preview_0: -1877215900
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
