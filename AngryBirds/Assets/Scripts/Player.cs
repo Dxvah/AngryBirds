@@ -21,15 +21,16 @@ public class Player : MonoBehaviour
     private void Update()
     {
         Collider2D[] listaPuntosChoque = Physics2D.OverlapCircleAll(startPos, 15);
+
         if (!Touchscreen.current.primaryTouch.press.isPressed)
         {
             Debug.Log("ha Tocado");
             //for (int i = 0; i < listaPuntosChoque.Length; i++)
-            {
+            //{
                 //Collider2D objetoChocado = listaPuntosChoque[i];
                 //Rigidbody2D rbObjetoChocado = objetoChocado.gameObject.GetComponent<Rigidbody2D>();
                 //rbObjetoChocado.AddForce(new Vector3(1, 1, 0), ForceMode2D.Force);
-            }
+            //}
         }
     }
     void OnCollisionEnter2D(Collision2D col)
