@@ -18,13 +18,31 @@ public class Player : MonoBehaviour
         rb.GetComponent<Rigidbody2D>();
         startPos = transform.position;
         //col.GetComponent<Collision2D>();
+        Collider2D[] listaPuntosChoque = Physics2D.OverlapCircleAll(startPos, 15);
+
+        Debug.Log(listaPuntosChoque.Length);
+
+        for ( int i = 0 ; i < listaPuntosChoque.Length ; i++ )
+        {
+            Collider2D objetoChocado = listaPuntosChoque[i];
+            Rigidbody2D rbObjetoChocado = objetoChocado.gameObject.GetComponent<Rigidbody2D>();
+            rbObjetoChocado.AddForce(new Vector3(100,100,0), ForceMode2D.Force);
+        }
+
+
     }
     void OnCollisionEnter2D(Collision2D col)
-    {      
-        
-        //Debug.Log(col.relativeVelocity + " " +col.gameObject.tag + " " + col.relativeVelocity.magnitude);
-    }
-    
+    {
 
- 
+        //Debug.Log(col.relativeVelocity + " " +col.gameObject.tag + " " + col.relativeVelocity.magnitude);
+        
+    }
+
+
+    void OnDrawGizmosSelected()
+    {
+        // Draw a yellow sphere at the transform's position
+        
+        Gizmos.DrawSphere(transform.position, 15);
+    }
 }

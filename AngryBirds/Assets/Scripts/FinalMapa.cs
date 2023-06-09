@@ -22,12 +22,12 @@ public class FinalMapa : MonoBehaviour
         if(collision.gameObject.CompareTag("Enemigo"))
         {
             puntaje.SumarPuntos(cantidadPuntos);
-            Destroy(gameObject);
+            Destroy(collision.gameObject);
         }
         if(collision.gameObject.CompareTag("Madera"))
         {
             puntaje.SumarPuntos(cantidadPuntos);
-            Destroy(gameObject);
+            Destroy(collision.gameObject);
         }
     }
 }
