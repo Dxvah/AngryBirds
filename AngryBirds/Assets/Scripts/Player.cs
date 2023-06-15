@@ -8,43 +8,58 @@ public class Player : MonoBehaviour
 {
     public Rigidbody2D rb;
     public Vector2 startPos;
-   // public Collider2D col;
+    public float explosionRadio = 5f;
+    public float explosionFuerza = 50f;
+
+    private bool bombaColocada = false;
      void Start()
      {
 
-        rb.GetComponent<Rigidbody2D>();
-        startPos = transform.position;
-        //col.GetComponent<Collision2D>();
-        //Collider2D[] listaPuntosChoque = Physics2D.OverlapCircleAll(startPos, 15);
-        //Debug.Log(listaPuntosChoque.Length);     
-     }
-    private void Update()
-    {
-        Collider2D[] listaPuntosChoque = Physics2D.OverlapCircleAll(startPos, 15);
-
-        if (!Touchscreen.current.primaryTouch.press.isPressed)
-        {
-            Debug.Log("ha Tocado");
-            //for (int i = 0; i < listaPuntosChoque.Length; i++)
-            //{
-                //Collider2D objetoChocado = listaPuntosChoque[i];
-                //Rigidbody2D rbObjetoChocado = objetoChocado.gameObject.GetComponent<Rigidbody2D>();
-                //rbObjetoChocado.AddForce(new Vector3(1, 1, 0), ForceMode2D.Force);
-            //}
-        }
-    }
-    void OnCollisionEnter2D(Collision2D col)
-    {
-
-        //Debug.Log(col.relativeVelocity + " " +col.gameObject.tag + " " + col.relativeVelocity.magnitude);
         
+        startPos = transform.position;
+         
+     }
+    private void OnMouseDown()
+    {
+      if (bombaColocada)
+      {
+        Explotar();
+      }
+      else
+      {
+        bombaColocada = true;
+      }
+    }
+    private void Explotar()
+    {
+        
+        Collider2D[] colliders = Physics2D.OverlapCircleAll(transform.position, explosionRadio);
+
+        foreach (Collider2D collider in colliders)
+        {
+            
+            Rigidbody2D rb = collider.GetComponent<Rigidbody2D>();
+            if (rb != null)
+            {
+                Vector2 direction = collider.transform.position - transform.position;
+                rb.AddForce(direction.normalized * explosionFuerza, ForceMode2D.Impulse);
+            }
+        
+            
+            bombaColocada = false;
+        }
+
     }
 
 
     void OnDrawGizmosSelected()
     {
-        // Draw a yellow sphere at the transform's position
         
-        Gizmos.DrawSphere(transform.position, 1);
+        if (bombaColocada)
+        {
+            
+            Gizmos.color = Color.red;
+            Gizmos.DrawWireSphere(transform.position, explosionRadio);
+        }
     }
 }
