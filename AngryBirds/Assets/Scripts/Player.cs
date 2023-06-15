@@ -9,16 +9,14 @@ public class Player : MonoBehaviour
     public Rigidbody2D rb;
     public Vector2 startPos;
     public float explosionRadio = 5f;
-    public float explosionFuerza = 50f;
-
+    public float explosionFuerza = 25f;
     private bool bombaColocada = false;
-     void Start()
-     {
 
-        
-        startPos = transform.position;
-         
-     }
+
+    void Start()
+    {    
+        startPos = transform.position;   
+    }
     private void OnMouseDown()
     {
       if (bombaColocada)
