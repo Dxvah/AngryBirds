@@ -43,7 +43,7 @@ public class Player : MonoBehaviour
                 rb.AddForce(direction.normalized * explosionFuerza, ForceMode2D.Impulse);
             }
         
-            
+            Destroy(this.gameObject);
             bombaColocada = false;
         }
 
