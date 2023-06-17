@@ -11,11 +11,17 @@ public class Player : MonoBehaviour
     public float explosionRadio = 5f;
     public float explosionFuerza = 25f;
     private bool bombaColocada = false;
+    private AudioSource audioSource;
+    [SerializeField] private AudioClip boom;
 
 
     void Start()
     {    
-        startPos = transform.position;   
+        startPos = transform.position;
+        audioSource = GetComponent<AudioSource>();
+        audioSource.clip = boom;
+        
+        
     }
     private void OnMouseDown()
     {
@@ -42,13 +48,20 @@ public class Player : MonoBehaviour
                 Vector2 direction = collider.transform.position - transform.position;
                 rb.AddForce(direction.normalized * explosionFuerza, ForceMode2D.Impulse);
             }
-        
-            Destroy(this.gameObject);
-            bombaColocada = false;
+            if (audioSource.enabled)
+            {
+                audioSource.Play(); 
+            }
+             Invoke("DestruirObjeto", 0.5f);
+             bombaColocada = false;
+           
         }
-
     }
 
+    private void DestruirObjeto()
+    {
+        Destroy(this.gameObject);
+    }
 
     void OnDrawGizmosSelected()
     {

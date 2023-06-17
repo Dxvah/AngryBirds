@@ -10,9 +10,15 @@ public class Enemies : MonoBehaviour
     public int dañoCaida = 5;
     public int vida = 1;
     public float mass = 1f;
+    private AudioSource audioSource;
+    [SerializeField] private AudioClip aaah;
+    [SerializeField] private AudioClip pam;
     void Start()
     {
         rbEnemy.GetComponent<Rigidbody2D>();
+        audioSource = GetComponent<AudioSource>();
+        aaah = Resources.Load<AudioClip>("Sounds/aaah");
+        pam = Resources.Load<AudioClip>("Sounds/pam");
     }
     
     void OnCollisionEnter2D(Collision2D col)
@@ -21,17 +27,25 @@ public class Enemies : MonoBehaviour
         if (col.gameObject.CompareTag("Player"))
         {
             puntaje.SumarPuntos(cantidadPuntos);
-            vida--;
-            
+            vida--;    
+            if (audioSource.enabled)
+            {          
+               audioSource.Play();
+            }
         }
         if (col.gameObject.CompareTag("Ground"))
         {
             float velocidadCaida = Mathf.Abs(col.relativeVelocity.y * rbEnemy.mass);
             if (velocidadCaida > 3f)
             {
-                puntaje.SumarPuntos(cantidadPuntos);
-                Destroy(this.gameObject);
-               
+                 if (audioSource.enabled)
+                 {       
+                        audioSource.Play();
+                 }
+
+              puntaje.SumarPuntos(cantidadPuntos);
+              Destroy(this.gameObject);
+                
             }
         }
         if(vida == 0)
@@ -46,6 +60,11 @@ public class Enemies : MonoBehaviour
                 {
                     puntaje.SumarPuntos(cantidadPuntos);
                     vida--;
+                    if (audioSource.enabled)
+                    {       
+                         audioSource.Play();
+                    }
+                    
                 }
             }
         }

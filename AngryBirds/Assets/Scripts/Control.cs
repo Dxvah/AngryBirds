@@ -9,6 +9,8 @@ public class Control : MonoBehaviour
     private Rigidbody2D jugadorRig;
     private SpringJoint2D jugadorSpring;
 
+    public GameObject canvasFinJuego;
+
     public GameObject jugador;
     public Rigidbody2D pivote;
     public float tiempoQuitarSpring;
@@ -59,7 +61,7 @@ public class Control : MonoBehaviour
     void LanzarPájaro()
     {
         jugadorRig.isKinematic = false;
-        jugadorRig = null; //hatirado = true
+        jugadorRig = null; 
 
         Invoke(nameof(QuitarSpring), tiempoQuitarSpring);
         Destroy(goma, 0.5f);
@@ -73,6 +75,6 @@ public class Control : MonoBehaviour
     }
     void FinJuego()
     {
-        //Debug.Log("FinJuego");
+        canvasFinJuego.SetActive(true);
     }
 }
